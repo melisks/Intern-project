@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+
+}
+
+#profdiv {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#datadiv {
+    padding: 40px;
+    width: 865px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid rgb(78, 133, 184);
+    border-radius: 12px;
+    box-shadow: 0 0 10px 4px #888;
+    position: absolute;
+    top: 145px;
+    left: 345px;
+
+    
+}
+
+.data {
+    margin-top: 11px;
+    display: flex;
+    justify-content: start;
+}
+
+label {
+    font-size: 28px !important;
+}
+
+h5 {
+    font-size: 28px !important;
+    position: relative;
+    top: 5px;
+    left: 17px;
+}
+
+h3 {
+    font-size: 40px !important;
+}
+#change{
+    position: relative;
+    top: 70px;
+}
+#change:hover{
+    background-color: green !important;
+    color: white !important;
+}
+#cross{
+    position: absolute;
+    left: 1169px;
+    top: 151px;
+    z-index: 2;
+    color: red;
+}

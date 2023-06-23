@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/upload.css">
+    <title>Add New Product</title>
+</head>
+
+<body>
+    <div class="mblock">
+        <div class="container0">
+            <div>
+                <h1>Add New Product</h1>
+            </div>
+            <div>
+                <form action="uploadproduct.php" method="post" enctype="multipart/form-data">
+                    <input class="inpbox" placeholder="Product Name" type="text" name="pname" maxlength="40" id="name"
+                        required>
+                    <br>
+                    <input class="inpbox" placeholder="Product Description" type="text" name="pdescripition"
+                        minlength="10" maxlength="5000" id="desc" required>
+                    <br>
+                    <input class="inpbox" placeholder="Product price in $" type="text" name="pprice" id="price"
+                        required>
+                    <br>
+                    <input class="inpbox" type="file" name="ppicture" id="img" accept="jpg" required>
+                    <input id="smtbtn" type="submit" value="Add Product">
+                </form>
+                <a href="manageproduct.php?click1=no&click2=no"><button id="cancel">Cancel</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

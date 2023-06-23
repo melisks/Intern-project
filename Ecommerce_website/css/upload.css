@@ -1,0 +1,75 @@
+#cancel{
+    margin: 4px;
+    position: relative;
+    bottom: 50px;
+    left: 190px;
+    width: auto;
+    height: 30px;
+    border-radius: 4px;
+    color: black;
+    border:solid red; 
+}
+#cancel:hover{
+    background-color: red;
+}
+#smtbtn{
+    margin-top: 6px;
+    display: inline;
+    width: auto;
+    height: 30px;
+    background-color: blue;
+    color: black;
+    border:solid blue;
+}
+#smtbtn:hover{
+    background-color: green;
+    border:solid green;
+}
+
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+input::placeholder{
+    color: black;
+    text-decoration: black;
+    font-weight: 3px;
+    
+}
+input {
+    width: fit-content;
+    margin-top: 3px;
+    background: none;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+
+}
+.inpbox{
+    width: 100%;
+}
+
+.mblock {
+    position: sticky;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    z-index: 1;
+}
+
+.container0 {
+    height: 420px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid rgb(78, 133, 184);
+    border-radius: 12px;
+    box-shadow: 0 0 10px 4px #888;
+    position: absolute;
+    right: 371px;
+}

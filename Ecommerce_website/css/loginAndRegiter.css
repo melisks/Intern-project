@@ -1,0 +1,59 @@
+#smtbtn{
+    width: auto;
+    height: 30px;
+    background-color: blue;
+    color: black;
+    border:solid blue;
+}
+#smtbtn:hover{
+    background-color: green;
+    border:solid green;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+input::placeholder{
+    color: black;
+    text-decoration: black;
+    font-weight: 3px;
+    
+}
+input {
+    width: fit-content;
+    margin-top: 3px;
+    background: none;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+
+}
+.inpbox{
+    margin-top: 4px;
+    width: 100%;
+}
+
+.mblock {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    
+}
+
+.container0 {
+    background-color: #fff;
+    height: 415px;
+    width: 300px;
+    padding: 20px;
+    border: 3px solid rgb(78, 133, 184);
+    border-radius: 12px;
+    box-shadow: 0 0 10px 4px #888;
+    position: absolute;
+    right: 621px;
+    z-index: 1;
+}

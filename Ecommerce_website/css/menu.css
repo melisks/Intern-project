@@ -1,0 +1,25 @@
+#logout{
+    margin: 0 6px 0 6px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    width: fit-content;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.bt{
+    width:244.443px;
+    margin:5px 4px 0px 0px
+}
+#productlist{
+    position: absolute;
+    top: 150;
+    z-index:0;
+    }

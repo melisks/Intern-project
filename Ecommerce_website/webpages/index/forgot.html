@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/loginAndRegiter.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <title>Reset Pass page</title>
+</head>
+
+<body>
+    <div class="mblock">
+        <div class="container0">
+            <div>
+                <h1>Reset Password!</h1>
+            </div>
+            <br>
+            <div>
+                <form action="forgetpass.php" method="post" onsubmit="return passmatch()">
+                    <input class="inpbox" type="text" name="uname" placeholder="Enter Your name" required />
+                    <br />
+                    <input class="inpbox" type="email" name="uemail" placeholder="Enter Your Email" required />
+                    <br />
+                    <input class="inpbox" type="tel" name="umobile_number" placeholder="Enter Your Mobile Number"
+                        minlength="10" maxlength="10" required />
+                    <br />
+                    <input class="inpbox" id="pass" type="password" name="upass" placeholder="Enter Your New Password"
+                        minlength="8" maxlength="15" required />
+                    <br />
+                    <input class="inpbox" id="passconfirm" type="password" onchange="return passmatch()"
+                        placeholder="Confirm Your New Password" minlength="8" maxlength="15" required />
+                    <br>
+                    <label for="passcheckindicator" id="passcheckindicator"></label>
+                    <br />
+
+
+                    <input id="smtbtn" type="submit" value="Reset Password" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
