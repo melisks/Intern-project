@@ -3,7 +3,6 @@ include "../includes/auth.php";
 if ($_SESSION['login_state'] == true) {
     $uname = $_SESSION['uname'];
     echo "<style>#product{color: white;}.float-left{float:left;}.float-right{float:right;}.bt{width:auto; margin:5px 4px 0px 0px}#productlist{position: absolute; top: 150; z-index:0;}.card-text{height:48px}img{weight:287px;height:192px;}</style>";
-    echo "<title>Manage My Products</title>";
     include "../includes/amenubar.html";
     echo "<script>uname= document.getElementById(\"username\");
     uname.innerHTML = \"$uname\";</script>";

@@ -29,7 +29,7 @@ if ($_SESSION['login_state'] == true) {
   <div class=\"card-body\">
     <h5 class=\"card-title\">Current No. of Vendors $row_count1</h5>
     <p class=\"card-text\">Some quick example text to build on the card title </p>
-    <a href=\"#\" class=\"btn btn-primary\">Vendors</a>
+    <a href=\"vendor.php\" class=\"btn btn-primary\">Vendors</a>
   </div>
 </div>";
   echo "<div class=\"card\" style=\"width: 18rem;\">
@@ -37,7 +37,7 @@ if ($_SESSION['login_state'] == true) {
   <div class=\"card-body\">
     <h5 class=\"card-title\">Current No. of Customers $row_count2</h5>
     <p class=\"card-text\">Some quick example text to build on the card title </p>
-    <a href=\"#\" class=\"btn btn-primary\">Customers</a>
+    <a href=\"customer.php\" class=\"btn btn-primary\">Customers</a>
   </div>
 </div>";
   echo "<div class=\"card\" style=\"width: 18rem;\">
@@ -53,7 +53,7 @@ if ($_SESSION['login_state'] == true) {
   <div class=\"card-body\">
     <h5 class=\"card-title\">Current No. of Sales $row_count4</h5>
     <p class=\"card-text\">Some quick example text to build on the card title </p>
-    <a href=\"#\" class=\"btn btn-primary\">Sales</a>
+    <a href=\"sales.php\" class=\"btn btn-primary\">Sales</a>
   </div>
 </div>";
   echo "</div>";
