@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="../../css/loginAndRegiter.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <script src="../../js/bootstrap.min.js"></script>
-    <title>Login page</title>
+    <style>
+        #smtbtn {
+            position: relative;
+            top: 10px;
+        }
+    </style>
+    <title>Admin page</title>
 </head>
 
 <body>
     <div class="mblock">
         <div class="container0">
             <div>
-                <h1>Login here!</h1>
+                <h1>Admin Login</h1>
             </div>
             <div>
                 <form action="login.php" method="post">
@@ -24,15 +30,11 @@
                     <br>
 
                     <input class="inpbox" type="password" name="upass" placeholder="Enter Your Password" required>
-                    <br>
-                    <a class="link" href="forgot.html">Forgot password?</a>
+
                     <br>
 
                     <input id="smtbtn" type="submit" value="Login">
                 </form>
-            </div>
-            <div>
-                <a class="link" href="home.php?login=no&register=yes">Don't have an account?</a>
             </div>
         </div>
     </div>

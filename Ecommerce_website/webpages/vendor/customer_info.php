@@ -3,7 +3,7 @@ include "../includes/sqlcon.php";
 $status = "SELECT * FROM user_info WHERE uid=$uid"; //this is not issue 
 $result = mysqli_query($con, $status);
 $row = mysqli_fetch_assoc($result);
-$name = $row['umobile_no'];
+$name = $row['uname'];
 $umobile = $row['umobile_no'];
 $uemail = $row['uemail'];
 $uaddress = $row['useraddress'];
