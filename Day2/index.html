@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div class="inputdiv">
+        <div>
+            <h1>TO-DO List</h1>
+            <form>
+                <input type="text" placeholder="Task name" name="name" id="name" required>
+                <br>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Task Description"
+                    required></textarea>
+                <br>
+                <input class="radio" type="radio" name="priority" id="radiolow" value="LOW" required><label
+                    for="LOW">Low
+                    priority</label>
+                <input class="radio" type="radio" name="priority" id="radiohigh" value="HIGH" required><label
+                    for="HIGH">High
+                    priority</label>
+                <br>
+                <input class="inpbtn" onclick="Submit()" type="button" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="task">
+
+    </div>
+
+    <!-- js -->
+    <script>
+
+        var div_ele = document.createElement('div1');
+
+        function Submit() {
+            var Task = document.getElementById("name");
+            var Taskdes = document.getElementById("description");
+            var Taskpriority = document.getElementsByName("priority");
+
+        }
+    </script>
+</body>
+
+</html>

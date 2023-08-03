@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html">
+                    <img class="img1" src="img/logo.jpg" width="50px" height="50px" alt="logo">
+                </a>
+                <div class="container1">
+                    <ul class="links">
+                        <li><a class="navlink" href="index.html">Home</a></li>
+                        <li><a class="navlink" href="aboutus.html">About us</a></li>
+                        <li><a class="navlink" href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="imgslider">
+            <img src="img/map.png" width="70%" height="500px" alt="banner">
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="inputdiv">
+                <div class="subinputdiv">
+                    <h1>Contact Us</h1>
+                    <input type="text" placeholder="Enter your first name" name="firstname" id="firstname" required>
+                    <input type="text" placeholder="Enter your last name" name="lastname" id="lastname" required>
+                    <br>
+                    <input type="number" placeholder="Enter your mobile number" name="mobilenumb" id="mobilenumb"
+                        minlength="10" maxlength="10" required>
+                    <input type="email" placeholder="Enter your email Address" name="email" id="email" required>
+                    <br>
+                    <textarea type="text" placeholder="Description" name="description" id="description" minlength="10"
+                        maxlength="500" cols="30" rows="10" required></textarea>
+                    <br>
+                    <input id="inpbtn" type="button" onclick="showdata()" value="Submit">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footercontent">
+            <div>
+                <ul>
+                    <li class="list">Address: _____________</li>
+                    <li class="list">Contact: ___x___X____</li>
+                    <li class="list">Email:abc@gmail.com</li>
+                    <li class="list">Other item</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="list"><a class="footerlink" href="index.html">Home</a></li>
+                    <li class="list"><a class="footerlink" href="aboutus.html">About us</a></li>
+                    <li class="list"><a class="footerlink" href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copy">&copy; all rights reserved by Khuman.</p>
+        </div>
+    </footer>
+    <!-- js -->
+    <script>
+        function showdata() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var name = firstname + " " + lastname;
+            var mobile = document.getElementById("mobilenumb").value;
+            var email = document.getElementById("email").value;
+            var description = document.getElementById("description").value;
+            console.log("Name:" + name);
+            console.log("Mobile Number:" + mobile);
+            console.log("Email Address:" + email);
+            console.log("Description:" + description);
+
+        }
+    </script>
+</body>
+
+</html>
