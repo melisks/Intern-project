@@ -38,9 +38,9 @@
                         development,
                         Cross-platform app development, App testing, and quality assurance.</p>
                 </div>
-                <a href="contactUs.html">
-                    <button>Contact Us</button>
-                </a>
+                <!-- <a href="contactUs.html"> -->
+                <button onclick="scrollFunction1('hell')">Contact Us</button>
+                <!-- </a> -->
             </div>
             <img src="img/aboutheroimg.avif" alt="img">
         </div>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="servicesection">
-            <div class="card">
+            <div class="card" id="hell">
                 <img class="block" src="img/mobile-development.webp" width="64px" height="64px" alt="icon">
                 <p class="block">Mobile App Testing and Maintenance</p>
             </div>
@@ -107,6 +107,15 @@
             <p class="copy">&copy; all rights reserved by Khuman.</p>
         </div>
     </footer>
+    <script> function scrollFunction1(str) {
+            let element = document.getElementById(str);
+            element.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'start'
+            });
+        }
+    </script>
 </body>
 
 </html>
